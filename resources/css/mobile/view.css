@@ -70,7 +70,7 @@
 .sec_fixed_bottom .inner_wrap .btn_wish { width:44px; height:44px; border:1px solid #c7cacd; border-radius: 2px; text-align: center; margin-right: 6px; }
 .sec_fixed_bottom .inner_wrap .btn_wish .icon_wish { margin: 0 auto;}
 .sec_fixed_bottom .inner_wrap .btn_wish.on { border-color:#fd535b; }
-.sec_fixed_bottom .inner_wrap .btn_wish.on .icon_wish { background-image: url('/resources/images/mobile/icon_wish_on.png'); }
+.sec_fixed_bottom .inner_wrap .btn_wish.on .icon_wish { background-image: url('/medivalue/resources/images/mobile/icon_wish_on.png'); }
 .sec_fixed_bottom .inner_wrap .btn_open_bottomsheet { width:calc(100% - 50px); height:44px; color:#fff; background-color: #287dfc; border-radius: 2px; font-size: 16px; font-weight: 500; text-align: center; }
 
 /* ========================================================
@@ -85,7 +85,7 @@
 /* ----------------------------------------------- */
 .sheetLayer_select_option .select_box + .select_box { margin-top:8px; }
 .sheetLayer_select_option .select_box .selected { position: relative; font-size: 14px; color:#777; line-height: 38px; border-radius: 2px; border:1px solid #dbdddf; padding: 0 56px 0 16px; }
-.sheetLayer_select_option .select_box .selected:after { content:""; position:absolute; top:-1px; right:-1px; width: 40px; height: 40px; border-left:1px solid #999; background: url('/resources/images/mobile/icon_arrow.svg') no-repeat center; opacity: .3;  }
+.sheetLayer_select_option .select_box .selected:after { content:""; position:absolute; top:-1px; right:-1px; width: 40px; height: 40px; border-left:1px solid #999; background: url('/medivalue/resources/images/mobile/icon_arrow.svg') no-repeat center; opacity: .3;  }
 .sheetLayer_select_option .select_box ul { position:absolute; top:100%; left:0; width: 100%; max-height:166px; overflow: auto; padding: 0 16px; background: #fff; border:1px solid #dbdddf; z-index: 10; border-radius: 0 0 2px 2px; margin-top:-1px; }
 .sheetLayer_select_option .select_box ul li { border-bottom:1px solid #f5f5f5; }
 .sheetLayer_select_option .select_box ul li button { font-size: 14px; color:#777; width: 100%; height:40px; text-align: left; }

@@ -432,7 +432,7 @@ footer .footer_bottom .mv_copyright { margin-top:12px; color:#999; font-size: 1.
 /* ========================================================
     contact_us
 ======================================================== */
-.mv_contact_us { color: #fff; text-align: center; background-image:url('/resources/images/intro/home/sec8/sec8_bg.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 140px 0; margin-bottom:265px;  }
+.mv_contact_us { color: #fff; text-align: center; background-image:url('/medivalue/resources/images/intro/home/sec8/sec8_bg.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 140px 0; margin-bottom:265px;  }
 .mv_contact_us .ft_row_tit {font-weight: bold;}
 .mv_contact_us .ft_cont_summ { margin-top:10px; }
 .mv_contact_us .btn_link { display:inline-block; font-size:2rem; width:200px; margin-top:36px; border:1px solid; border-radius: 20px; padding:7px 0 5px; transition: all .4s;}

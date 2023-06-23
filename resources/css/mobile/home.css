@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.area_main_banner { position:relative; padding-top:70%; color:#fff; text-align: center; background-image:url("/resources/images/mobile/home/img_main_banner.png"); background-size: cover; background-position: 0 0; background-repeat: no-repeat; }
+.area_main_banner { position:relative; padding-top:70%; color:#fff; text-align: center; background-image:url("/medivalue/resources/images/mobile/home/img_main_banner.png"); background-size: cover; background-position: 0 0; background-repeat: no-repeat; }
 .area_main_banner .container { position: static; }
 .area_main_banner .tx_wrap { position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); width: 100%; max-width:calc(100% - 32px); }
 .area_main_banner .tx_tit { font-size: 22px; font-weight: bold; line-height: 28px; }

@@ -122,12 +122,12 @@ input[type=number]::-webkit-inner-spin-button {
 .input_text:focus { border-color:#000; }
 /* ------------------------------------ */
 .input_checkbox { appearance: none; display: none; }
-.input_checkbox + .input_shape { display:inline-block; vertical-align: middle; width:22px; height:22px; background: url('/resources/images/mobile/icon_check_off.svg') no-repeat 0 0; background-size: 100%; }
-.input_checkbox:checked + .input_shape { background-image: url('/resources/images/mobile/icon_check_on.svg') }
+.input_checkbox + .input_shape { display:inline-block; vertical-align: middle; width:22px; height:22px; background: url('/medivalue/resources/images/mobile/icon_check_off.svg') no-repeat 0 0; background-size: 100%; }
+.input_checkbox:checked + .input_shape { background-image: url('/medivalue/resources/images/mobile/icon_check_on.svg') }
 /* ------------------------------------ */
 .input_radio { appearance: none; display: none; }
-.input_radio + .input_shape { display:inline-block; vertical-align: middle; width:22px; height:22px; background: url('/resources/images/mobile/icon_radio_off.svg') no-repeat 0 0; background-size: 100%; }
-.input_radio:checked + .input_shape { background-image: url('/resources/images/mobile/icon_radio_on.svg') }
+.input_radio + .input_shape { display:inline-block; vertical-align: middle; width:22px; height:22px; background: url('/medivalue/resources/images/mobile/icon_radio_off.svg') no-repeat 0 0; background-size: 100%; }
+.input_radio:checked + .input_shape { background-image: url('/medivalue/resources/images/mobile/icon_radio_on.svg') }
 /* ------------------------------------ */
 .input_checkbox_agree  { appearance: none; display: none; }
 .input_checkbox_agree + .input_shape { position:relative; display:inline-block; vertical-align: middle; width: 65px; height:22px; border-radius: 22px; background-color: #a4abb9; transition: all .4s; }
@@ -262,15 +262,15 @@ input[type=number]::-webkit-inner-spin-button {
 -----------------------------------------------------------------*/
 .ic_svg { display: block; width: 24px; height:24px; background-position: 0 0; background-size: 100%; background-repeat: no-repeat;}
 
-.icon_arrow { background-image: url('/resources/images/mobile/icon_arrow.svg'); }
-.icon_arrow-2 { background-image: url('/resources/images/mobile/icon_arrow-2.svg'); }
-.icon_back_white { background-image: url('/resources/images/mobile/icon_back_white.svg'); }
-.icon_minus { background-image: url('/resources/images/mobile/icon_minus.svg'); }
-.icon_plus { background-image: url('/resources/images/mobile/icon_plus.svg'); }
-.icon_wish { background-image: url('/resources/images/mobile/icon_wish.png'); }
-.icon_caution { width: 16px; height: 16px; background: url('/resources/images/mobile/icon_help.svg') no-repeat 0 0; }
-.icon_close { background-image: url('/resources/images/mobile/icon_close.svg'); }
-.icon_cart { background-image: url('/resources/images/mobile/icon_cart.svg'); }
+.icon_arrow { background-image: url('/medivalue/resources/images/mobile/icon_arrow.svg'); }
+.icon_arrow-2 { background-image: url('/medivalue/resources/images/mobile/icon_arrow-2.svg'); }
+.icon_back_white { background-image: url('/medivalue/resources/images/mobile/icon_back_white.svg'); }
+.icon_minus { background-image: url('/medivalue/resources/images/mobile/icon_minus.svg'); }
+.icon_plus { background-image: url('/medivalue/resources/images/mobile/icon_plus.svg'); }
+.icon_wish { background-image: url('/medivalue/resources/images/mobile/icon_wish.png'); }
+.icon_caution { width: 16px; height: 16px; background: url('/medivalue/resources/images/mobile/icon_help.svg') no-repeat 0 0; }
+.icon_close { background-image: url('/medivalue/resources/images/mobile/icon_close.svg'); }
+.icon_cart { background-image: url('/medivalue/resources/images/mobile/icon_cart.svg'); }
 /* ----------------------------------------------------------------
     @공통_말줄임
 -----------------------------------------------------------------*/
@@ -412,7 +412,7 @@ input[type=number]::-webkit-inner-spin-button {
 ======================================================== */
 .mv_tooltip { position:relative; display: inline-block; vertical-align: middle;  }
 .mv_tooltip .btn_show_tt { vertical-align: top; padding:4px; }
-.mv_tooltip .btn_show_tt .icon_help { display: block; width:16px; height:16px; background: url('/resources/images/mobile/icon_help.svg') no-repeat 0 0; }
+.mv_tooltip .btn_show_tt .icon_help { display: block; width:16px; height:16px; background: url('/medivalue/resources/images/mobile/icon_help.svg') no-repeat 0 0; }
 .mv_tooltip .tt_content { display: none; position:absolute; bottom:100%; left:50%; transform: translateX(-50%); white-space: nowrap; background-color: #287dfc;
  color:#fff; font-size: 13px; padding:5px 10px; border-radius: 2px; margin-bottom:6px; }
 .mv_tooltip .tt_content:after {content:""; display: block; border-top:6px solid #287dfc; border-left:5px solid transparent; border-right:5px solid transparent; position:absolute; top:100%; left:50%; transform: translateX(-50%); }
