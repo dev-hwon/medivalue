@@ -7,140 +7,140 @@
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 100;
-    src: url(/resources/fonts/NotoSansKR/NotoSansKR-Thin.woff2) format('woff2'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Thin.woff) format('woff'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Thin.ttf) format('truetype')
+    src: url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Thin.woff2) format('woff2'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Thin.woff) format('woff'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Thin.ttf) format('truetype')
 }
 @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 300;
-    src: url(/resources/fonts/NotoSansKR/NotoSansKR-Light.woff2) format('woff2'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Light.woff) format('woff'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Light.ttf) format('truetype')
+    src: url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Light.woff2) format('woff2'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Light.woff) format('woff'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Light.ttf) format('truetype')
 }
 @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 400;
-    src: url(/resources/fonts/NotoSansKR/NotoSansKR-Regular.woff2) format('woff2'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Regular.ttf) format('truetype')
+    src: url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Regular.woff2) format('woff2'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Regular.ttf) format('truetype')
 }
 @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
-    src: url(/resources/fonts/NotoSansKR/NotoSansKR-Medium.woff2) format('woff2'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Medium.woff) format('woff'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Medium.ttf) format('truetype')
+    src: url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Medium.woff2) format('woff2'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Medium.woff) format('woff'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Medium.ttf) format('truetype')
 }
 @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 700;
-    src: url(/resources/fonts/NotoSansKR/NotoSansKR-Bold.woff2) format('woff2'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Bold.ttf) format('truetype')
+    src: url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Bold.woff2) format('woff2'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Bold.ttf) format('truetype')
 }
 @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 900;
-    src: url(/resources/fonts/NotoSansKR/NotoSansKR-Black.woff2) format('woff2'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Black.woff) format('woff'),
-    url(/resources/fonts/NotoSansKR/NotoSansKR-Black.ttf) format('truetype')
+    src: url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Black.woff2) format('woff2'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Black.woff) format('woff'),
+    url(/medivalue/resources/fonts/NotoSansKR/NotoSansKR-Black.ttf) format('truetype')
 }
 
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:400;
-	src:url("/resources/fonts/AppleSDGothicNeoSB.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoSB.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoSB.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoSB.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoSB.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoSB.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:500;
-	src:url("/resources/fonts/AppleSDGothicNeoB.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoB.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoB.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoB.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoB.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoB.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:700;
-	src:url("/resources/fonts/AppleSDGothicNeoEB.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoEB.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoEB.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoEB.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoEB.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoEB.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:100;
-	src:url("/resources/fonts/AppleSDGothicNeoT.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoT.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoT.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoT.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoT.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoT.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:200;
-	src:url("/resources/fonts/AppleSDGothicNeoUL.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoUL.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoUL.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoUL.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoUL.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoUL.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:300;
-	src:url("/resources/fonts/AppleSDGothicNeoL.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoL.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoL.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoL.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoL.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoL.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:400;
-	src:url("/resources/fonts/AppleSDGothicNeoR.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoR.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoR.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoR.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoR.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoR.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:500;
-	src:url("/resources/fonts/AppleSDGothicNeoM.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoM.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoM.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoM.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoM.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoM.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:600;
-	src:url("/resources/fonts/AppleSDGothicNeoSB.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoSB.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoSB.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoSB.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoSB.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoSB.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:700;
-	src:url("/resources/fonts/AppleSDGothicNeoB.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoB.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoB.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoB.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoB.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoB.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:800;
-	src:url("/resources/fonts/AppleSDGothicNeoEB.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoEB.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoEB.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoEB.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoEB.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoEB.ttf") format("truetype")
 }
 @font-face{
 	font-family:AppleSDGothicNeo;
 	font-weight:900;
-	src:url("/resources/fonts/AppleSDGothicNeoH.eot");
-	src:local("※"), url("/resources/fonts/AppleSDGothicNeoH.woff") format("woff"), url("/resources/fonts/AppleSDGothicNeoH.ttf") format("truetype")
+	src:url("/medivalue/resources/fonts/AppleSDGothicNeoH.eot");
+	src:local("※"), url("/medivalue/resources/fonts/AppleSDGothicNeoH.woff") format("woff"), url("/medivalue/resources/fonts/AppleSDGothicNeoH.ttf") format("truetype")
 }
 
 @font-face{
 	font-family:GmarketSans;
 	font-weight:300;
-	src:url("/resources/fonts/gmarket/GmarketSansLight.otf");
-	src:url("/resources/fonts/gmarket/GmarketSansTTFLight.ttf") format("truetype");
+	src:url("/medivalue/resources/fonts/gmarket/GmarketSansLight.otf");
+	src:url("/medivalue/resources/fonts/gmarket/GmarketSansTTFLight.ttf") format("truetype");
 }
 @font-face{
     font-family:GmarketSans;
     font-weight:400;
-    src:url("/resources/fonts/gmarket/GmarketSansMedium.otf");
-    src:url("/resources/fonts/gmarket/GmarketSansTTFMedium.ttf") format("truetype");
+    src:url("/medivalue/resources/fonts/gmarket/GmarketSansMedium.otf");
+    src:url("/medivalue/resources/fonts/gmarket/GmarketSansTTFMedium.ttf") format("truetype");
 }
 @font-face{
 	font-family:GmarketSans;
 	font-weight:600;
-	src:url("/resources/fonts/gmarket/GmarketSansBold.otf");
-	src:url("/resources/fonts/gmarket/GmarketSansTTFBold.ttf") format("truetype");
+	src:url("/medivalue/resources/fonts/gmarket/GmarketSansBold.otf");
+	src:url("/medivalue/resources/fonts/gmarket/GmarketSansTTFBold.ttf") format("truetype");
 }
 
