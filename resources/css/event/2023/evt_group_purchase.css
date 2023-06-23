@@ -1,0 +1,51 @@
+@charset "utf-8";
+#event_group_purchase {padding-bottom: 0;}
+#event_group_purchase .inner {width: 100%; max-width: 1280px; margin: 0 auto;}
+#event_group_purchase .area_visual { position:relative; text-align: center; }
+#event_group_purchase .area_visual:after { content:""; display:block; width:100%; height:100%; position:absolute; top:0; left:0; background-repeat: repeat-x; background-size: auto 100%; background-position: center; }
+#event_group_purchase .area_visual:after { background-image:url("/resources/images/event_group_purchase/event_group_purchase_pattern_bg.jpg"); }
+#event_group_purchase .area_visual img { position: relative; z-index: 5; }
+#event_group_purchase .area_evt1 { padding: 90px 0; background-color: #EEF1FA; }
+
+#event_group_purchase .evt_top_text { text-align: center; letter-spacing: -.5px; }
+#event_group_purchase .evt_top_text .tx_tit { font-size:45px; font-weight:bold; color:#071451; line-height: 1.4; }
+#event_group_purchase .evt_top_text .tx_summary { font-size: 25px; margin-top:16px; }
+#event_group_purchase .evt_top_text .tx_period { display:inline-block; font-size: 24px; color:#fff; background: #05389f; padding: 8px 16px; margin-top: 42px;}
+
+#event_group_purchase .evt_goods_list { margin-top: 58px; }
+#event_group_purchase .evt_goods_list ul { display: flex; flex-wrap: wrap; margin-left: -20px; margin-right:-20px; justify-content: center; }
+#event_group_purchase .evt_goods_list li { flex:0 0 auto; padding:0 20px; margin-bottom: 40px; }
+#event_group_purchase .evt_goods_list li .item_wrap { max-width: 290px; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.16); cursor: default; position: relative;}
+
+/* 판매불가일경우(soldout) 사용되는거같은데... li에 상태 내용 적용되는게 없는데?? 추후 확인후 제거하겠음.. */
+#event_group_purchase .evt_goods_list li .item_wrap:before { content: "품절되었습니다."; display: none; position: absolute; inset: 0; background-color: rgba(55, 55, 55, 0.7); color: #fff; font-size: 25px; font-weight: 500; align-items: center; justify-content: center; }
+#event_group_purchase .evt_goods_list li.soldout .item_wrap:before{display: flex;}
+
+.item_wrap .item_img { min-height:251px; background-color: #fff; }
+.item_wrap .item_info { padding:5px 20px; background-color: #F7F7F7; }
+.item_wrap .item_info .tx_price { white-space: nowrap; letter-spacing: -.5px;}
+.item_wrap .item_info .tx_price .tx_price_origin { position: relative; display:inline-block; vertical-align: middle; font-size: 20px; color: #8E8E8E; font-weight: 300; text-align: center; margin-right:10px; }
+.item_wrap .item_info .tx_price .tx_price_origin:before{ content: ""; display: block; position: absolute; top: 50%; left: -5%; width: 110%; height: 8px; background-image: url("/resources/images/event_first_purchase/ico_line_through.png"); background-repeat: no-repeat; background-position: center; background-size: 100% auto; transform: translateY(-50%) }
+.item_wrap .item_info .tx_price .tx_price_discount { display:inline-block; vertical-align: middle; font-size: 30px; color: #163EBA; font-weight: 700;  }
+
+.item_wrap .item_info .tx_goodsName {font-size: 20px; line-height: 28px; color: #000; font-weight: 700; letter-spacing: -1.5px; word-break: keep-all; }
+.item_wrap .item_info .tx_memo {font-size:16px; line-height:24px; color:#000; font-weight:700; letter-spacing:-1.5px; margin-bottom:10px; min-height: 48px; }
+.item_wrap .item_info .tx_addinfo { margin-top: 30px; }
+.item_wrap .item_info .tx_addinfo .row{font-size: 16px; line-height: 24px; color: #000000; font-weight: 500; display: flex; align-items: center;}
+.item_wrap .item_info .tx_addinfo .row .th{margin-right: 10px; padding-right: 10px; position: relative;}
+.item_wrap .item_info .tx_addinfo .row .th:before{content: ""; display: block; width: 1px; height: 16px; background-color: #000; position: absolute; top: 4px; right: 0;}
+.item_wrap .item_info .tx_addinfo .row .td{}
+
+.item_wrap .item_btnCart {padding: 10px 10px 10px 10px; background-color: #f7f7f7;}
+.item_wrap .item_btnCart .btn_cart { display: block; width: 100%; height: 46px; color: #fff; font-size: 17px; font-weight: 500; text-align: center; border:none; background-color: #163EBA; border-radius: 8px;}
+.item_wrap .item_btnCart .btn_cart:after{content: ""; width: 23px; height: 22px; display: inline-block; margin-left: 8px; background-image: url(/resources/images/event_first_purchase/ico_cart.png); background-repeat: no-repeat; background-position: center; vertical-align: sub;}
+
+#event_group_purchase .alert_list { display: flex; justify-content: center; width: 1200px; margin: 136px auto 0; padding-top:20px; border-top:1px solid #161616;     letter-spacing: -0.5px; }
+#event_group_purchase .alert_list .title { width: 220px; font-size: 23px; color: #161616; font-weight: 600; }
+#event_group_purchase .alert_list .list {}
+#event_group_purchase .alert_list .list ul{}
+#event_group_purchase .alert_list .list li { margin-top: 13px; }
+#event_group_purchase .alert_list .list li:first-child { margin-top: 0; }
+#event_group_purchase .alert_list .list li > div { font-size: 20px; color: #161616; font-weight: 400; position: relative; padding-left: 10px; line-height: 29px; }
+#event_group_purchase .alert_list .list li > div em { font-size:inherit; font-weight: 600; }
+#event_group_purchase .alert_list .list li > div:before { content: ""; display: block; width: 4px; height: 4px; border-radius: 100%; background-color: #4A4A4A; position: absolute; left: 0; top: 13px;}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* 구조가 order와 달라서 같이쓸수가 없음..section...ㅠ */
+.section {  }
+
+.addr_list { }
+.addr_list ul { }
+.addr_list ul li { border-top:1px solid #dbdddf; border-bottom:1px solid #dbdddf; background-color: #fff; box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.06); margin-top: 10px; }
+
+.label { display: inline-block; vertical-align: middle; line-height: 16px; font-size: 12px; border-radius: 2px; padding:0 4px; color:#287dfc; border:1px solid #287dfc; margin-left:4px; }
+.label.label_default:after { content:"기본배송지";}
+.label.label_recent { color:#c4c4c4; border-color:#c4c4c4; }
+.label.label_recent:after { content:"최근배송지"; }
+
+/* ========================================================
+    addr_card > 주소 리스트
+======================================================== */
+.addr_list .addr_card { position:relative; padding: 18px 0; }
+.addr_list .addr_card .tx_name { }
+.addr_list .addr_card .tx_name em { display: inline-block; vertical-align: middle; font-size: 16px; font-weight: 500; color:#222; }
+.addr_list .addr_card .tx_phon { font-size: 15px; color:#777; margin-top:4px; }
+.addr_list .addr_card .tx_address1,
+.addr_list .addr_card .tx_address2 { display: inline-block; vertical-align: middle; font-size: 15px; color:#777; margin-top:2px; }
+
+.addr_list .addr_card .cd_info_bottom { margin-top:12px; }
+.addr_list .addr_card .btn_wrap { text-align: right; font-size: 0; }
+.addr_list .addr_card .btn_wrap a { position:relative; display: inline-block; vertical-align: middle; margin-right:4px; color:#777; font-size: 14px; line-height: 28px; border:1px solid #dbdddf; border-radius: 2px; padding:0 10px; }
+.addr_list .addr_card .btn_wrap a.btn_select { color:#fff; border-color:#a4abb9; background-color: #a4abb9; }
+
+.addr_list .btn_wrap { margin-top:16px; }
+.addr_list .btn_wrap .btn_add_addr { display: block; width: 100%; font-size: 15px; color:#287dfc; border:1px solid #287dfc; border-radius: 6px; background-color: #fff; line-height: 52px; text-align: center; }
+/* ========================================================
+    form_addr > 주소 (추가/삭제)
+======================================================== */
+.form_addr { --var-label-width:68px; --var-search-width:68px; }
+.form_addr .inner_wrap { border-top:1px solid #dbdddf; border-bottom:1px solid #dbdddf; background-color: #fff; box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.06);  }
+.form_addr .inner_wrap .tx_form_name { font-size: 17px; font-weight: bold; color:#222; line-height: 60px; }
+/* --------------------------------------- */
+.form_addr .input_wrap { display: flex; margin-bottom:8px; }
+.form_addr .input_wrap > div { flex: 0 0 auto; }
+.form_addr .input_wrap .addr_label { width: var(--var-label-width); font-size: 15px; color:#222; line-height: 40px; }
+.form_addr .input_wrap .addr_input { width: calc(100% - var(--var-label-width)); font-size: 0; }
+/* --------------------------------------- */
+.form_addr .input_wrap input[name=address1] { width: calc( 100% - var(--var-search-width) - 6px); vertical-align: middle;  }
+.form_addr .input_wrap input[name=address2] { margin-top: 8px; }
+.form_addr .input_wrap .btn_search_addr { width: var(--var-search-width); height: 40px; color: #fff; background-color: #a4abb9; font-size: 15px; border-radius: 2px; margin-left: 6px; vertical-align: middle; }
+/* --------------------------------------- */
+.form_addr .input_wrap_checkbox { margin-top:30px; margin-bottom:20px; }
+.form_addr .input_wrap_checkbox .input_checkbox_name { display: inline-block; vertical-align: middle; font-size: 15px; color:#222; }
+/* ------------- btn -------------------------- */
+.form_addr .btn_wrap { margin-top:16px; }
+.form_addr .btn_submit_addr { display: block; width: 100%; font-size: 15px; color:#287dfc; border:1px solid #287dfc; border-radius: 6px; background-color: #fff; line-height: 52px; text-align: center; }
+.form_addr .btn_delete_addr { display: block; width: 100%; font-size: 15px; color:#a4abb9; border:1px solid #a4abb9; border-radius: 6px; background-color: #fff; line-height: 52px; text-align: center; margin-top:8px; }

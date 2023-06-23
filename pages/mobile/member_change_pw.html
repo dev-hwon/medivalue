@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="all">
+    <title>Medivalue | 메인</title>
+    <meta name="description" content="최초의 의료재료 직거래 커머스 플랫폼">
+    <meta name="keywords" content="치과재료 가격비교, 치과의약품, 교정,기구,소장비,치과재료, 알지네이트, 소독용액, 교정재료, 기공재료, 기공용 재료, 치과재료, 최저가치과재료, 치과재료싼곳, 치과재료특판, 임플란트재료, 임플란트기구,임플란트장비, 치과장비, DENTAL,치과재료,치과재료전문업체,덴탈,치자재,인상재,레진,세멘트,근관치료,충전재,에칭,본드,임프레션,트레이,교정기구,치과위생용품판매,특판,치과치재료,미백,임플란트">
+    <!-- og -->
+    <meta property="og:title" content="의료 인프라 혁신 기업">
+    <meta property="og:description" content="최초의 의료재료 직거래 커머스 플랫폼">
+    <!-- <meta property="og:image" content="/resources/images/main_renew/img_og_image.jpg">-->
+
+	<link rel="shortcut icon" href="/resources/images/favicon/favicon.png" />
+
+    <!-- css -->
+    <link href="/resources/css/swiper-bundle.min.css" rel="stylesheet" >
+    <link href="/resources/css/mobile/common.css" rel="stylesheet" >
+    <link href="/resources/css/mobile/headfoot.css" rel="stylesheet" >
+    <link href="/resources/css/mobile/member.css" rel="stylesheet" >
+    <!-- <jsp:invoke fragment="stylesheet"/> -->
+
+    <!-- js -->
+    <script src="/resources/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="/resources/js/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="/resources/js/include.js" type="text/javascript" defer></script>
+    <script src="/resources/js/mobile/common.js" type="text/javascript" defer></script>
+    <!-- <jsp:invoke fragment="javascript"/> -->
+</head>
+<body>
+    <div class="page_bg_default">
+        <!-- include :: header area -->
+        <div data-include-path="common/header.html"></div>
+        <!-- // -->
+        <div class="m_contents m_member">
+            <div class="container">
+                <div class="tx_tit">비밀번호 변경</div>
+                <form name="form_member_change_pw" class="form_find">
+                    <div class="input_wrap">
+                        <label>비밀번호 변경</label>
+                        <input type="password" class="input_text input_pw required" name="password" placeholder="변경할 비밀번호를 입력해 주세요" />
+                    </div>
+                    <div class="tx_msg tx_msg_password"></div>
+                    <div class="input_wrap">
+                        <label>변경 비밀번호 확인</label>
+                        <input type="password" class="input_text input_pw_confirm required" name="password_confirm" placeholder="변경할 비밀번호를 다시 입력해 주세요" />
+                    </div>
+                    <div class="tx_msg tx_msg_password_confirm"></div>
+                    <button type="submit" class="btn_common btn_blue btn_find">변경완료</button>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            let form = $("form[name=form_member_change_pw]");
+            let isChangeable = false;
+            function checkPassword() {
+                let pw = $("input[name=password]").val();
+                let pw_confirm = $("input[name=password_confirm]").val();
+                if( pw.length === 0 || pw_confirm.length === 0 ) {
+                    $(".tx_msg_password_confirm").text('');
+                    return isChangeable = false;;
+                }
+                if( pw_confirm.length < 4 ) {
+                    return isChangeable = false;;
+                }
+                if( pw === pw_confirm ) {
+                    $(".tx_msg_password_confirm").text('비밀번호가 일치합니다.').addClass('ok').removeClass('error')
+                    return isChangeable = true;
+                } else {
+                    $(".tx_msg_password_confirm").text('비밀번호가 일치하지 않습니다.').addClass('error').removeClass('ok')
+                    return isChangeable = false;
+                }
+            }
+            $("input[name=password]").on("input", function(){
+                checkPassword();
+            }).on("focusout", function (){
+                if( $(this).val().length === 0) {
+                    $(".tx_msg_password").text('');
+                    return;
+                }
+                if( $(this).val().length < 4) {
+                    $(".tx_msg_password").text('영문 4자~16자, 문자와 숫자를 조합해 주세요.').addClass('error')
+                } else {
+                    $(".tx_msg_password").text('');
+                }
+            });
+            $("input[name=password_confirm]").on("input", function(){
+                checkPassword();
+            });
+            form.submit(function(e){
+                e.preventDefault();
+                if(isChangeable) {
+                    mvLayer.alert("정상적으로 처리되었습니다");
+                    // 로그인페이지로 리다이렉트
+                } else {
+                    mvLayer.alert("비밀번호를 확인해주세요");
+                }
+            })
+        </script>
+        <!-- include :: header area -->
+        <div data-include-path="common/footer.html"></div>
+        <!-- // -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<div id="event_medicash" class="evt_container">
+    <div class="visual_bg"></div>
+    <script>
+        function createSnow() {
+            const el = document.createElement("div");
+            const target = document.querySelector(".visual_bg");
+            el.classList.add('snow');
+            el.style.marginTop = randomPosition() + 'px';
+            el.style.left = randomPosition() + 'px';
+            target.appendChild(el)
+        }
+        function randomPosition() {
+            return Math.floor(Math.random() * window.innerWidth)
+        }
+        for (let i=0; i < 200; i++) {
+            createSnow();
+        }
+
+    </script>
+    <section class="area_setting">
+        <div class="container">
+            <form name="form_set_option">
+                <div class="input_wrap">
+                    <input type="text" name="option" class="input_text" placeholder="옵션명 기재" />
+                    <button type="submit" class="btn_add_option">적용</button>
+                </div>
+                <ul class="option_lists"></ul>
+            </form>
+        </div>
+    </section>
+
+    <section class="area_contents">
+        <div class="evtroulette">
+            <div class="roulette_con">
+                <div class="circle"><!-- 룰렛판 --></div>
+                <div class="arrow"><!-- 화살표 --></div>
+                <div class="start"><span class="btn_start">START</span></div>
+                <div class="bg-coin"><!-- 동전 --></div>
+            </div>
+            <button type="button" class="evt_reset">초기화</button>
+        </div>
+    </section>
+</div>
+<script>
+    $(function(){
+        let form = $('form[name=form_set_option]');
+        let optionArr = [];
+
+        $('.btn_add_option').on('click', function(e){
+            e.preventDefault();
+            addOption()
+        })
+        $('body').on('click','.btn_del_option', function(){
+            let d_option = $(this).data('option');
+            console.log(d_option);
+            deleteOption(d_option);
+            loadOption();
+        });
+        function deleteOption(val) {
+            for(let i = 0; i < optionArr.length; i++) {
+                if(optionArr[i] === val)  {
+                    optionArr.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+        function loadOption() {
+            $('.option_lists').empty();
+            for(let i=0; i < optionArr.length; i++) {
+                $('.option_lists').append(`<li><span class="option_name">`+optionArr[i]+`</span><button type="button" data-option="`+optionArr[i]+`" class="btn_del_option"></button></li>`)
+            }
+        }
+
+        function addOption() {
+            let option = form.find('input[name=option').val();
+            for(let i = 0; i < optionArr.length; i++) {
+                if(optionArr[i] === option)  {
+                    alert('같은이름이 존재')
+                    return;
+                }
+            }
+            if( $.trim(option) !== "" ) {
+                optionArr.push(option);
+                loadOption();
+                option.val("");
+            }
+        }
+
+        let $el = {
+            btn : $(".btn_start"),
+            stage : $(".circle"),
+            layText : $(".prizeLayer"),
+            layImg : $(".prizeLayer .prize"),
+            reset : $(".evt_reset")
+        }
+        let num_turn = 4; // 회전 횟수
+        let objRotate = function(num){
+            let rnd = Math.floor(Math.random()*60) - 60;
+
+            if(rnd === 0 || rnd === -60) rnd = -30; // 라인에 걸릴 때 중간으로 위치
+            let val = 360 * num_turn + num + rnd;
+            setTimeout(function(){
+                $el.stage.css( { "transform" : "rotate("+ val +"deg)" } );
+            },1);
+        }
+        $el.btn.click(function(){
+            let $self = $(this);
+            let prt = prompt('퍼블테스트용 입니다.\n1 : 배스킨라빈스 \n2 : 크리스피크림도넛 \n3 : [세븐일레븐]칸쵸 \n4 : e머니100점 \n5 : e머니10점 \n6 : 꽝');
+            if ( prt && prt < 7 ){
+                $self.hide();
+                $el.stage.addClass("rotate");
+
+                switch( parseInt(prt,10) ){
+                    case 1 : // [배스킨라빈스] 더블주니어 아이스크림 (e4,300) - 300deg
+                        objRotate(300);
+                        $el.layText.addClass("ep1"); // 3시 이전일때 ep1, 3시 이후일때 ep2 추가해주세요
+                        $el.layText.removeClass("bomb");
+                        $el.layImg.hide().siblings(".pr1").show();
+                        break;
+                    case 2 : // [크리스피크림도넛]오리지널하프더존 e머니7800점 - 120deg
+                        objRotate(120);
+                        $el.layText.addClass("ep1");
+                        $el.layText.removeClass("bomb");
+                        $el.layImg.hide().siblings(".pr2").show();
+                        break;
+                    case 3 : // [세븐일레븐] 롯데 칸쵸 - 60deg
+                        objRotate(60);
+                        $el.layText.addClass("ep1");
+                        $el.layText.removeClass("bomb");
+                        $el.layImg.hide().siblings(".pr3").show();
+                        break;
+                    case 4 : //  e머니100점- 240deg
+                        objRotate(240);
+                        $el.layText.addClass("ep1");
+                        $el.layText.removeClass("bomb");
+                        $el.layImg.hide().siblings(".pr4").show();
+                        break;
+                    case 5 : // e머니10점 - 240deg
+                        objRotate(0);
+                        $el.layText.addClass("ep1");
+                        $el.layText.removeClass("bomb");
+                        $el.layImg.hide().siblings(".pr5").show();
+                        break;
+                    case 6 : // 꽝(3시이전) - 180deg
+                        objRotate(180);
+                        $el.layText.addClass("ep1");
+                        $el.layText.addClass("bomb ep1");
+                        $el.layImg.hide().siblings(".pr6").show();
+                        break;
+                    default :
+                        break;
+                }
+                // 무조건 실행
+                // setTimeout(function(){
+                // 	$el.stage.removeClass("rotate").removeAttr("style");
+                // 	$self.show();
+                // },5000)
+            }else{
+                alert('값을 다시 입력해 주세요');
+            }
+        })
+        $el.reset.on('click', function(){
+            $el.stage.removeClass("rotate").removeAttr("style");
+            $el.btn.show();
+        })
+    })
+</script>

@@ -1,0 +1,53 @@
+@charset "utf-8";
+#event_mvxeno {padding-bottom: 0;}
+#event_mvxeno .inner {width: 100%; max-width: 1280px; margin: 0 auto;}
+#event_mvxeno .area_visual { position:relative; text-align: center; }
+#event_mvxeno .area_visual:before,
+#event_mvxeno .area_visual:after { content:""; display:block; width:50%; height:100%; position:absolute; top:0; background-repeat: repeat-x; background-size: auto 100%; background-position: 0 0; }
+#event_mvxeno .area_visual:before { left:0; background-image:url("/resources/images/event_promotion/event_mvxeno_bgLeft.jpg");}
+#event_mvxeno .area_visual:after { left:50%; background-image:url("/resources/images/event_promotion/event_mvxeno_bgRight.jpg"); }
+#event_mvxeno .area_visual img { position: relative; z-index: 5; }
+#event_mvxeno .area_evt1 { padding: 90px 0; background-color: #EEF1FA; }
+
+#event_mvxeno .evt_top_text { text-align: center; letter-spacing: -.5px; }
+#event_mvxeno .evt_top_text .tx_tit { font-size:45px; font-weight:bold; color:#071451; line-height: 1.4; }
+#event_mvxeno .evt_top_text .tx_summary { font-size: 25px; margin-top:16px; }
+#event_mvxeno .evt_top_text .tx_info_box { display:inline-block; font-size: 24px; color:#fff; background: linear-gradient(to bottom, #8F58EF, #6C7EE0 ); padding: 8px 16px; margin-top: 42px;}
+#event_mvxeno .evt_top_text .tx_add_info { font-size:22px; color:#727272; margin-top:6px; }
+
+#event_mvxeno .evt_goods_list { margin-top: 58px; padding: 0 165px; }
+#event_mvxeno .evt_goods_list ul { display: flex; flex-wrap: wrap; margin-left: -20px; margin-right:-20px; justify-content: center; }
+#event_mvxeno .evt_goods_list li { flex:0 0 auto; padding:0 20px; margin-bottom: 40px; }
+#event_mvxeno .evt_goods_list li .item_wrap { max-width: 290px; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.16); cursor: default; position: relative;}
+
+/* 판매불가일경우(soldout) 사용되는거같은데... li에 상태 내용 적용되는게 없는데?? 추후 확인후 제거하겠음.. */
+#event_mvxeno .evt_goods_list li .item_wrap:before { content: "품절되었습니다."; display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(55, 55, 55, 0.7); color: #fff; font-size: 25px; font-weight: 500;}
+#event_mvxeno .evt_goods_list li.soldout .item_wrap:before{display: block;}
+
+.item_wrap .item_img { }
+.item_wrap .item_info { padding:5px 20px; background-color: #F7F7F7; }
+.item_wrap .item_info .tx_price { white-space: nowrap; letter-spacing: -.5px;}
+.item_wrap .item_info .tx_price .tx_price_origin { position: relative; display:inline-block; vertical-align: middle; font-size: 20px; color: #8E8E8E; font-weight: 300; text-align: center; margin-right:10px; }
+.item_wrap .item_info .tx_price .tx_price_origin:before{ content: ""; display: block; position: absolute; top: 50%; left: -5%; width: 110%; height: 8px; background-image: url("/resources/images/event_first_purchase/ico_line_through.png"); background-repeat: no-repeat; background-position: center; background-size: 100% auto; transform: translateY(-50%) }
+.item_wrap .item_info .tx_price .tx_price_discount { display:inline-block; vertical-align: middle; font-size: 30px; color: #163EBA; font-weight: 700;  }
+
+.item_wrap .item_info .tx_goodsName {font-size: 20px; line-height: 32px; color: #000; font-weight: 700; letter-spacing: -1.5px;}
+.item_wrap .item_info .tx_memo {font-size:16px; line-height:24px; color:#000; font-weight:700; letter-spacing:-1.5px; margin-bottom:10px; min-height: 48px; }
+.item_wrap .item_info .tx_addinfo {}
+.item_wrap .item_info .tx_addinfo .row{font-size: 16px; line-height: 24px; color: #000000; font-weight: 500; display: flex; align-items: center;}
+.item_wrap .item_info .tx_addinfo .row .th{margin-right: 10px; padding-right: 10px; position: relative;}
+.item_wrap .item_info .tx_addinfo .row .th:before{content: ""; display: block; width: 1px; height: 16px; background-color: #000; position: absolute; top: 4px; right: 0;}
+.item_wrap .item_info .tx_addinfo .row .td{}
+
+.item_wrap .item_btnCart {padding: 10px 10px 10px 10px; background-color: #f7f7f7;}
+.item_wrap .item_btnCart .btn_cart { display: block; width: 100%; height: 46px; color: #fff; font-size: 17px; font-weight: 500; text-align: center; border:none; background-color: #163EBA; border-radius: 8px;}
+.item_wrap .item_btnCart .btn_cart:after{content: ""; width: 23px; height: 22px; display: inline-block; margin-left: 8px; background-image: url(/resources/images/event_first_purchase/ico_cart.png); background-repeat: no-repeat; background-position: center; vertical-align: sub;}
+
+#event_mvxeno .alert_list{display: flex; width: 850px; margin: 136px auto 0; padding-top:20px; border-top:1px solid #A2A2A2; }
+#event_mvxeno .alert_list .title{font-size: 20px; color: #5A5A5A; font-weight: 500; width: 200px;}
+#event_mvxeno .alert_list .list{}
+#event_mvxeno .alert_list .list ul{}
+#event_mvxeno .alert_list .list li{margin-top: 3px;}
+#event_mvxeno .alert_list .list li:first-child{margin-top: 0;}
+#event_mvxeno .alert_list .list li > div{font-size: 16px; color: #4A4A4A; font-weight: 300; position: relative; padding-left: 10px;}
+#event_mvxeno .alert_list .list li > div:before{content: ""; display: block; width: 4px; height: 4px; border-radius: 100%; background-color: #4A4A4A; position: absolute; left: 0; top: 11px;}

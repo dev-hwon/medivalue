@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* ========================================================
+    sec_top_banner2
+======================================================== */
+.sec_top_banner2 { margin-top: 8px; }
+
+/* ========================================================
+    sec_tab_menu
+======================================================== */
+.sec_tab_menu { background-color: #287dfc; }
+.sec_tab_menu .scroller { width: 100%; overflow: auto; }
+.sec_tab_menu .scroller ul { display: flex; }
+.sec_tab_menu .scroller ul li { position:relative; flex:0 0 auto; }
+.sec_tab_menu .scroller ul li:after { content:""; display: block; width:1px; height:10px; background-color: rgba(255,255,255,.4); position:absolute; top:50%; right:0; margin-top:-5px; }
+.sec_tab_menu .btn_tab { height:48px; text-align: center; color:rgba(255,255,255,.4); font-weight: normal; font-size: 16px; padding:0 12px; }
+.sec_tab_menu .btn_tab.active { font-weight: bold; color:#fff; }
+
+
+/* ========================================================
+    sec_controller
+======================================================== */
+.sec_controller { background-color: #fff; border-bottom:1px solid #dbdddf; }
+.sec_controller .col_sort {}
+.sec_controller .col_sort .btn_sorting { height:52px; font-size: 17px; font-weight: bold; color:#222; }
+.sec_controller .col_sort .btn_sorting .icon_arrow { display: inline-block; vertical-align: middle; transition: all .4s; }
+.sec_controller .col_sort ul {display: none; width:240px; border:1px solid #222; padding:16px; border-radius: 12px; background-color: #fff; position:absolute; top:100%; left:16px; z-index: 10; }
+.sec_controller .col_sort ul li + li { margin-top:8px; }
+.sec_controller .col_sort ul li + li button { width: 100%; font-size: 15px; color:#222; text-align: left; }
+.sec_controller .selected {font-size: 13px; color:#287dfc; }
+
+/* --------------------------------------- */
+.sec_controller .col_sort.active .btn_sorting .icon_arrow {transform: rotate(180deg); }
+.sec_controller .col_sort.active ul {display: block;}
+
+/* ========================================================
+    sec_evt_list
+======================================================== */
+.sec_evt_list { padding: 16px 0; }
+.sec_evt_list .item {  }
+.sec_evt_list .item + .item { margin-top :12px; }
+.sec_evt_list .item a { position:relative; display: block; border-radius: 6px;  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.06); overflow: hidden; }
+.sec_evt_list .item .item_labels { position:absolute; top:0; left:0; }
+.sec_evt_list .item .item_labels > div { font-size: 13px; color:#fff; line-height: 24px; padding:0 6px; border-radius: 6px 0 6px 0; }
+.sec_evt_list .item .item_labels .label_ing { background-color: #ff3627; }
+.sec_evt_list .item .item_labels .label_expire { background-color: #222; }
+
+.sec_evt_list .item .item_banner {  }
+.sec_evt_list .item .item_info { padding:12px; background-color: #fff; }
+.sec_evt_list .item .item_info .tx_tit { font-size: 16px; color:#222; line-height: 18px; }
+.sec_evt_list .item .item_info .tx_period { font-size: 14px; color:#777; line-height: 1; margin-top:2px; }
+
+.sec_evt_list .btn_more_ist { width: 100%; font-size: 14px; font-weight: 500; color: #222; text-align: center; line-height: 50px; border: 1px solid #ecedef; border-radius: 8px; background-color: #fff; margin: 12px 0 0; }
+.sec_evt_list .btn_more_ist .icon_arrow { display: inline-block; vertical-align: -6px; }
+
+/* ========================================================
+    sec_goods_list
+======================================================== */
+.sec_goods_list { padding:8px 8px 16px;}
+.sec_goods_list ul {  }
+.sec_goods_list li { }
+.sec_goods_list li .item_wrap { height:100%; border-radius: 6px; overflow: hidden; cursor: default; position: relative; border: 1px solid #eff0f1;  background-color: #fff;}
+/* ----------------------------------------------- */
+/* 판매불가일경우(soldout) 사용되는거같은데... li에 상태 내용 적용되는게 없는데?? 추후 확인후 제거하겠음.. */
+.sec_goods_list li .item_wrap:before { content: "품절되었습니다."; display: none; position: absolute; inset: 0; background-color: rgba(55, 55, 55, 0.7); color: #fff; font-size: 25px; font-weight: 500; align-items: center; justify-content: center; z-index: 10; }
+.sec_goods_list li.soldout .item_wrap:before{display: flex;}
+/* ----------------------------------------------- */
+.sec_goods_list .item_wrap .item_img { position:relative; padding-top:100%; }
+.sec_goods_list .item_wrap .item_img img { position: absolute; inset: 0; object-fit: contain; width: 100%; height: 100%; }
+
+.sec_goods_list .item_wrap .item_info { padding:4px 12px 12px; }
+.sec_goods_list .item_wrap .item_info .tx_goodsName {font-size: 15px; color: #222; word-break: keep-all; min-height: 36px; line-height: 18px; }
+
+.sec_goods_list .item_wrap .item_info .tx_subinfo { font-size: 0; margin-top: 2px; }
+.sec_goods_list .item_wrap .item_info .tx_subinfo span { position:relative; display: inline-block; vertical-align: middle; font-size: 14px; color:#777; padding-right:5px; margin-right:4px; line-height: 16px; }
+.sec_goods_list .item_wrap .item_info .tx_subinfo span:after { content:""; display: block; width:1px; height: 10px; background-color: #777; position:absolute; top:50%; right:0; margin-top:-5px; }
+.sec_goods_list .item_wrap .item_info .tx_subinfo span:last-child { margin-right: 0; }
+.sec_goods_list .item_wrap .item_info .tx_subinfo span:last-child:after { display: none; }
+
+.sec_goods_list .item_wrap .item_info .tx_price { white-space: nowrap; letter-spacing: -.5px; margin-top:8px; line-height: 1.3; }
+.sec_goods_list .item_wrap .item_info .tx_price .tx_price_origin { display: inline-block; vertical-align: baseline; font-size: 13px; color:#C4C4C4; text-decoration: line-through;  }
+.sec_goods_list .item_wrap .item_info .tx_price .tx_price_discountPer { display: inline-block; vertical-align: baseline; font-size: 16px; font-weight: bold; color: #FF3627; margin-right:8px; }
+.sec_goods_list .item_wrap .item_info .tx_price .tx_price_discount { display: block; font-size: 14px; color:#222; }
+.sec_goods_list .item_wrap .item_info .tx_price .tx_price_discount em { font-size: 17px; font-weight: bold; }
+
+.sec_goods_list .item_wrap .item_info .tx_hashtag { font-size: 0; margin-top:8px; }
+.sec_goods_list .item_wrap .item_info .tx_hashtag span { display: inline-block; vertical-align: middle; font-size: 12px; color:#777; background-color: #F8F8F8; margin-right:4px; padding:0 4px; line-height: 24px; }
+.sec_goods_list .item_wrap .item_info .tx_hashtag span:last-child { margin-right: 0; }
+
+.sec_goods_list .item_wrap .item_btnCart {padding: 0 12px 20px;}
+.sec_goods_list .item_wrap .item_btnCart .btn_cart { display: block; width: 100%; height: 38px; color: #287DFC; font-size: 15px; font-weight: bold; text-align: center; border:1px solid #287DFC; border-radius: 2px; background-color: #fff; }
+
+/* ----------------------------------------------- */
+.sec_goods_list .btn_more_ist { width: 100%; font-size: 14px; font-weight: 500; color: #222; text-align: center; line-height: 50px; border: 1px solid #ecedef; border-radius: 8px; background-color: #fff; margin: 8px 0 0; }
+.sec_goods_list .btn_more_ist .icon_arrow { display: inline-block; vertical-align: -6px; }
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+.sec_goods_list .col_empty { }
+.sec_goods_list .col_empty .item_wrap_empty { display: flex; justify-content: center; }
+.sec_goods_list .col_empty .item_wrap_empty img { flex:0 0 auto; width: 100px; }
+
+/* ========================================================
+    sec_caution
+======================================================== */
+.sec_caution { padding:20px 0; border-top:1px solid #dbdddf; background-color: #ececec; }
+.sec_caution .tx_tit { font-size: 13px; color:#5b5b5b; }
+.sec_caution .tx_conts { font-size: 13px; color:#979797; margin-top:12px; }
+
+
+/* ========================================================
+    sheet bottom
+======================================================== */
+.sheetLayer_select_option { padding-bottom: 71px; }
+.sheetLayer_select_option .sheet_content { display: flex; flex-flow: column; height:100%; }
+.sheetLayer_select_option .sheet_inner { padding:16px; border-top:1px solid #f5f5f5; }
+.sheetLayer_select_option .sheet_inner.selected_list { height:100%; overflow: auto; }
+.sheetLayer_select_option .sheet_inner:first-child { border:none; }
+.sheetLayer_select_option .sheet_inner_title { font-size: 16px; font-weight: bold; color:#222; line-height: 22px; margin-bottom:6px; }
+/* ----------------------------------------------- */
+.sheetLayer_select_option .select_box + .select_box { margin-top:8px; }
+.sheetLayer_select_option .select_box .selected { position: relative; font-size: 14px; color:#777; line-height: 38px; border-radius: 2px; border:1px solid #dbdddf; padding: 0 56px 0 16px; }
+.sheetLayer_select_option .select_box .selected:after { content:""; position:absolute; top:-1px; right:-1px; width: 40px; height: 40px; border-left:1px solid #999; background: url('/resources/images/mobile/icon_arrow.svg') no-repeat center; opacity: .3;  }
+.sheetLayer_select_option .select_box ul { position:absolute; top:100%; left:0; width: 100%; max-height:166px; overflow: auto; padding: 0 16px; background: #fff; border:1px solid #dbdddf; z-index: 10; border-radius: 0 0 2px 2px; margin-top:-1px; }
+.sheetLayer_select_option .select_box ul li { border-bottom:1px solid #f5f5f5; }
+.sheetLayer_select_option .select_box ul li button { font-size: 14px; color:#777; width: 100%; height:40px; text-align: left; }
+/* ----------------------------------------------- */
+.selected_list {}
+.selected_list ul {}
+.selected_list ul li { padding:16px; border:1px solid #dbdddf; background-color: #fbfbfb; border-radius: 2px; margin-bottom:8px; }
+.selected_list .btn_del_list { float: right; margin-top:-6px; margin-right:-6px; margin-left:10px; }
+.selected_list .btn_del_list .icon_close { width: 22px; height: 22px; opacity: .2;}
+
+.selected_list .tx_selected_option { font-size: 0; margin-top:2px; }
+.selected_list .tx_selected_option span { position:relative; display: inline-block; vertical-align: middle; font-size: 14px; color:#777; padding-right: 6px; margin-right: 4px; }
+.selected_list .tx_selected_option span:after { content:""; display: block; width: 1px; height:10px; background-color: #999; position:absolute; top:50%; right:0; margin-top:-5px; }
+.selected_list .tx_selected_option span:last-child:after { display: none; padding:0; margin:0; }
+
+.selected_list .li_bot { display: flex; justify-content: space-between; align-items: center; flex-wrap:wrap; margin-top:12px; }
+.selected_list .li_bot > div { flex: 0 0 auto; }
+.selected_list .li_bot .tx_adj_option_price { font-size: 14px; font-weight: bold; color:#222; }
+.selected_list .li_bot .tx_adj_option_price em { font-size: 17px; }
+
+/* ----------------------------------------------- */
+.sheetLayer_select_option .set_amount { position:relative; display: inline-block; padding:0 32px; border:1px solid #dbdddf; }
+.sheetLayer_select_option .set_amount .input_number {width:56px; height: 30px; font-size: 14px; color:#777; text-align: center; border:none; }
+.sheetLayer_select_option .set_amount .amount_up,
+.sheetLayer_select_option .set_amount .amount_down { position:absolute; top:-1px; width: 32px; height:32px; border:1px solid #dbdddf; background-color: #fff; }
+.sheetLayer_select_option .set_amount .amount_up { right :-1px;}
+.sheetLayer_select_option .set_amount .amount_down { left:-1px; }
+
+.sheetLayer_select_option .set_amount .amount_up i,
+.sheetLayer_select_option .set_amount .amount_down i { opacity: .4; margin:0 auto; }
+/* --------------------------------------- */
+.sheetLayer_select_option .sheet_bottom { position: absolute; bottom:0; left:0; width:100%; border-top:1px solid #f5f5f5; padding:12px; background-color: #fff; z-index: 100; }
+.sheetLayer_select_option .sheet_bottom .s_b_top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.sheetLayer_select_option .sheet_bottom .s_b_top > div { flex: 0 0 auto; }
+.sheetLayer_select_option .sheet_bottom .s_b_top .tx_tit{ font-size: 15px; font-weight: 500; color:#777; }
+.sheetLayer_select_option .sheet_bottom .s_b_top .tx_total_price { font-size: 17px; font-weight: bold; color:#222; }
+.sheetLayer_select_option .sheet_bottom .s_b_top .tx_total_price em { font-size: 20px; }
+
+.sheetLayer_select_option .s_b_btn_wrap { display: flex; flex-wrap:wrap; justify-content: space-between; }
+.sheetLayer_select_option .s_b_btn_wrap .btn_add_cart { width: 44px; height: 44px; border: 1px solid #c7cacd; border-radius: 2px; text-align: center; margin-right: 6px; }
+.sheetLayer_select_option .s_b_btn_wrap .btn_add_cart i { margin:0 auto; opacity: .3; }
+.sheetLayer_select_option .s_b_btn_wrap .btn_buy_list { width: calc(100% - 50px); height: 44px; color: #fff; background-color: #287dfc; border-radius: 2px; font-size: 16px; font-weight: 500; text-align: center; }

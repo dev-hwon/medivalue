@@ -1,0 +1,7 @@
+.evt_container {position:relative; z-index: 10; }
+#out {
+    border:2px solid gray;
+    width:300px;
+    min-height: 24px;
+    background-color: #ffffcc;
+}

@@ -1,0 +1,69 @@
+@charset "utf-8";
+.page_bg_default { background-color: #fff;}
+/* ========================================================
+    member common
+======================================================== */
+.m_member .logo { padding:60px 0 50px; text-align: center; }
+.m_member .logo img { width:180px; }
+.m_member .tx_desc { font-size: 15px; color:#777; text-align: center; line-height: 20px; margin-bottom: 20px; }
+.m_member form .input_wrap { position: relative; }
+.m_member form .input_text { position: relative; height:54px; font-size: 15px; color:#222; border-radius: 6px; }
+.m_member form .input_text:focus { border-color: #287dfc; z-index: 1 }
+/* button 타입 :: 기본이 disable */
+.m_member .btn_common { display: block; width: 100%; height:54px; line-height: 52px; font-size: 18px; color:#fff; text-align: center; background-color: #dbdddf; border:1px solid #dbdddf; border-radius: 6px; margin-top:16px; transition: all .4s; }
+
+.m_member .btn_common.btn_blue { color:#287dfc; border:1px solid #287dfc; background-color: #fff; }
+.m_member .btn_common.btn_blue_on { color:#fff; border:1px solid #287dfc; background-color: #287dfc; }
+
+/* ========================================================
+    member login
+======================================================== */
+.m_member form[name=form_member_login] .input_id { border-radius: 6px 6px 0 0;  }
+.m_member form[name=form_member_login] .input_pw { margin-top:-1px; border-radius: 0 0 6px 6px; }
+
+/* 기입올바르게...했을때 */
+.m_member form[name=form_member_login] .btn_login.on { background-color: #287dfc; }
+/* ----------------------------------------------- */
+.m_member .tx_msg { font-size: 14px; line-height: 20px; color:#777; margin-top:12px; }
+.m_member .tx_msg.ok { color:#287DFC; }
+.m_member .tx_msg.error { color:#ff3627; }
+/* ----------------------------------------------- */
+.m_member .member_find_link { font-size: 0; text-align: center; margin-top:40px; }
+.m_member .member_find_link a { position:relative; display: inline-block; font-size: 15px; color:#777; line-height: 19px; padding:0 12px; }
+.m_member .member_find_link a:after { content:""; display: block; width: 1px; height: 10px; background-color: #dbdddf; position: absolute; top:50%; right: 0; margin-top: -5px; }
+.m_member .member_find_link a:last-child:after { display: none; }
+
+/* ========================================================
+    member find
+======================================================== */
+.m_member .tx_tit { font-size: 22px; font-weight: 500; color:#222; line-height: 30px; padding:60px 0 32px; text-align: center; }
+.m_member form.form_find .input_wrap { margin-top:18px; }
+.m_member form.form_find .input_wrap label { display: block; font-size: 16px; color:#777; line-height: 22px; margin-bottom:8px; }
+/* ----------------------------------------------- */
+.m_member .btn_find { margin-top: 50px; }
+/* ----------------------------------------------- */
+.m_member .tx_desc.tx_find_id {margin-top:-10px; margin-bottom:60px; }
+.m_member .link_find_pw { margin-top:12px; }
+/* ========================================================
+    member email verify
+======================================================== */
+.m_member .tx_desc.tx_verify {margin-top:-10px; margin-bottom:60px; }
+.m_member .tx_desc.tx_verify em { color:#0E5DF8; }
+/* ----------------------------------------------- */
+.m_member form[name=form_email_verify] .input_wrap { padding-right:88px; }
+.m_member form[name=form_email_verify] .input_wrap .btn_re_send { position:absolute; top:0; right:0; width:80px; height:54px; color:#fff; background-color: #287dfc; border-radius: 6px; }
+.m_member form[name=form_email_verify] .input_wrap .btn_re_send.disalbe { background-color: #dbdddf; }
+.m_member form[name=form_email_verify] .btn_verify_my_email { margin-top:12px; }
+
+
+
+/* ----------------------------------------------- */
+.m_member .btn_send_verify_number { margin-top: 50px; }
+
+
+
+
+
+
+
+

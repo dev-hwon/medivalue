@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.area_main_banner { position:relative; padding-top:70%; color:#fff; text-align: center; background-image:url("/resources/images/mobile/home/img_main_banner.png"); background-size: cover; background-position: 0 0; background-repeat: no-repeat; }
+.area_main_banner .container { position: static; }
+.area_main_banner .tx_wrap { position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); width: 100%; max-width:calc(100% - 32px); }
+.area_main_banner .tx_tit { font-size: 22px; font-weight: bold; line-height: 28px; }
+.area_main_banner .tx_desc { font-size: 14px; margin-top:8px; line-height: 18px; }
+
+.area_main_service { margin-top:-30px; }
+.area_main_service .link_banner { position:relative; margin-bottom:16px; }
+.area_main_service .link_banner a { position:relative; display:block; border-radius: 12px;  padding: 24px 16px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); overflow: hidden; }
+.area_main_service .link_banner a:before { content:""; display: block; position:absolute; inset:0; border-radius: 12px; border:1px solid rgba(0,0,0,.1); pointer-events: none;}
+.area_main_service .link_banner a .tx_tit { font-size: 18px; font-weight: 500; line-height: 22px; }
+.area_main_service .link_banner a .tx_desc { font-size: 13px; color:#000; margin-top:4px; line-height: 16px; }
+.area_main_service .link_banner a .img_obj { position: absolute; width: 89px; top:9px; right:10%; }
+/* ------------------------------------------ */
+.area_main_service .link_ai_list a { background: linear-gradient(to right, #cde5fd, #aad1fb); }
+.area_main_service .link_ai_list a .tx_tit { color:#25619e; }
+/* ------------------------------------------ */
+.area_main_service .link_cart_list a { background: linear-gradient(to right, #f5f0de, #efead2); }
+.area_main_service .link_cart_list a .tx_tit { color:#e8a643; }
+/* ------------------------------------------ */
+.area_main_service .link_banner .list_cnt { display: block; color:#fff; background-color:#ff3627; font-size: 11px; text-align: center; min-width:18px; line-height: 18px; padding:0 4px; position:absolute; top:8px; right:8px; border-radius: 18px; }
+
+.area_bottom_banner {}
+.area_bottom_banner a { display:block; background-color: #001c72; text-align: center; }
